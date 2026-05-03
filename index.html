@@ -150,6 +150,22 @@ html,body{min-height:100%;background:#0a0e14;font-family:var(--font-ui);color:va
 .bonus-pip.p3{background:rgba(58,191,94,.12);color:#3abf5e;border:1px solid rgba(58,191,94,.22)}
 .bonus-text{font-size:12px;font-weight:600;color:var(--div-text);line-height:1.45}
 .note{font-size:11px;font-weight:500;letter-spacing:.05em;color:var(--div-text-dim);margin-top:.875rem;font-style:italic}
+
+/* Mobile responsive mission rows */
+@media(max-width:600px){
+  .mrow-inner{flex-wrap:wrap}
+  .mrow-num{width:36px;min-height:auto;padding:.5rem 0}
+  .mrow-icon{width:40px;border-right:none}
+  .mrow-info{flex:1;border-right:none;padding:.5rem .75rem .25rem}
+  .mrow-name{font-size:14px;white-space:normal;overflow:visible;text-overflow:unset}
+  .mrow-loot{flex:1 0 100%;padding:.25rem .75rem .6rem;border-top:1px solid var(--div-border)}
+  .mrow-loot-item{font-size:16px;white-space:normal;overflow:visible;text-overflow:unset}
+  .topbar-titles h1{font-size:24px}
+  .timer-val{font-size:28px}
+  .weekly-pill{font-size:12px;padding:5px 10px}
+  .tabs{gap:2px}
+  .tab{font-size:11px;padding:7px 10px;letter-spacing:.08em}
+}
 </style>
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/nashint/division2/design-assets/Division2.png"/>
 </head>
@@ -180,9 +196,9 @@ var BRANDS=[
   {name:'Electrique',                 file:'electrique',              b1:'+10% Status Effects',        b2:'+20% Shock Resistance',      b3:'+30% SMG Damage'},
   {name:'Empress International',      file:'empressinternational',    b1:'+10% Skill Health',          b2:'+10% Skill Damage',          b3:'+8% Skill Efficiency'},
   {name:'Fenris Group AB',            file:'fenrisgroupab',           b1:'+10% Assault Rifle Damage',  b2:'+30% Reload Speed',          b3:'+50% Stability'},
-  {name:'Gila Guard',                 file:'gilaguard',               b1:'+5% Total Armor',            b2:'+60% Health',                b3:'+2% Armor Regeneration'},
-  {name:'Golan Gear',                 file:'golangear',               b1:'+10% Status Effects',        b2:'+1.5% Armor Regeneration',   b3:'+10% Total Armor'},
-  {name:'Grupo Sombra S.A.',          file:'gruposombra',             b1:'+13% Critical Hit Damage',   b2:'+20% Explosive Damage',     b3:'+13% Headshot Damage'},
+  {name:'Gila Guard',                 file:'gilaguard',               b1:'+5% Total Armor',            b2:'+60% Health',                b3:'+2% Armor Regen'},
+  {name:'Golan Gear',                 file:'golangear',               b1:'+10% Status Effects',        b2:'+1.5% Armor Regen',          b3:'+10% Total Armor'},
+  {name:'Grupo Sombra S.A.',          file:'gruposombra',             b1:'+13% Critical Hit Damage',   b2:'+20% Explosive Damage',      b3:'+13% Headshot Damage'},
   {name:'Habsburg Guard',             file:'habsburgguard',           b1:'+13% Headshot Damage',       b2:'+20% Marksman Rifle Damage', b3:'+25% Status Effects'},
   {name:'Hana-U Corporation',         file:'hanaucorporation',        b1:'+10% Skill Haste',           b2:'+10% Skill Damage',          b3:'+15% Weapon Damage'},
   {name:'Imminence Armaments',        file:'imminencearmaments',      b1:'+5% Weapon Damage',          b2:'+100% Increased Threat',     b3:'+60% Pistol Damage'},
